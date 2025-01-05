@@ -5,7 +5,6 @@ pipeline {
     maven 'Maven3'
   }
   environment {
-    APP_NAME = "registration-app-pipeline"
     DOCKER_IMAGE = "indmyul/webapp:${BUILD_NUMBER}"
     DOCKER_PASS = 'dockerhub'
     RELEASE = "1.0.0"
