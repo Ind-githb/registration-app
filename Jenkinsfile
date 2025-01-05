@@ -6,7 +6,7 @@ pipeline {
   }
   environment {
     APP_NAME = "registration-app-pipeline"
-    DOCKER_IMAGE = "abhishekf5/ultimate-cicd:${BUILD_NUMBER}"
+    DOCKER_IMAGE = "indmyul:${BUILD_NUMBER}"
     DOCKER_PASS = 'dockerhub'
     RELEASE = "1.0.0"
     IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
